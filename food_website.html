@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Best online food dilevery service,India | MyMeal.com</title>
+    <link rel="stylesheet" href="css/style.css"> <!--css is name of folder style.css is name of file inside it-->
+
+    <link rel="stylesheet" media="screen and (max-width: 1340px)" href="css/phone.css"> <!--we do this to make website responsive and how it will work in phones so here in one like we set the media query-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">  <!--for text of logo-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="MyMeal.com">
+        </div>
+        <ul>
+            <!--we do like #services because if we click on services in navigation bar we should reach at services part of the page -->
+            <!--for smooth scrolling we have done in style.css in html{}-->
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our clients</a></li>
+            <li class="item"><a href="#contact">Contact us</a></li>
+        </ul>
+        <div id="text">
+            <p>Just eat it!</p>
+        </div> 
+    </nav>
+    
+    <section id="home">
+        <h1 class="h-primary">Welcome to MyMeal</h1>
+        <p>MyMeal provides you with the variety of items which are best in quality.</p>
+        <p>Here you can customise your delicious food according to your needs</p>
+        <p>You will get a proper chart of all the ingredients where you can know your calories intake</p>
+        <p>The food will be fully sanitized and each board member will take full precautions while delivering the food</p>
+        <button class="btn">Order now</button>
+    </section>
+
+    <section id="services-container">   <!--which services we provide-->
+        <h1 class="h-primary center">Our Services</h1>   <!--created two classes-->
+        <div id="services">
+            <div class="box">
+                <img src="css\box1.jpg" alt="">
+                <h2 class="h-secondary center"> Food Ordering</h2>
+                <p class ="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum perferendis ipsa quia nobis ut aut maxime alias sapiente esse ullam earum mollitia magni delectus quaerat, reiciendis commodi minus dolore debitis facilis possimus, molestiae aperiam!</p>
+            </div>
+            <div class="box">
+                <img src="css\box2.jpg" alt="">
+                <h2 class="h-secondary center"> Food catering</h2>
+                <p class ="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum perferendis ipsa quia nobis ut aut maxime alias sapiente esse ullam earum mollitia magni delectus quaerat, reiciendis commodi minus dolore debitis facilis possimus, molestiae aperiam!</p>
+            </div>
+            <div class="box">
+                <img src="css\box3.jpg" alt="">
+                <h2 class="h-secondary center">Proper hygiene</h2>
+                <p class ="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum perferendis ipsa quia nobis ut aut maxime alias sapiente esse ullam earum mollitia magni delectus quaerat, reiciendis commodi minus dolore debitis facilis possimus, molestiae aperiam!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="client-section">
+        <h1 class="h-primary center">Our clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="css\starbucks.jpg" alt="Our client">
+            </div>
+            <div class="client-item">
+                <img src="css\coca-cola.jpg" alt="Our client">
+            </div>
+            <div class="client-item">
+                <img src="css\KFC.jpg" alt="Our client">
+            </div>
+            <div class="client-item">
+                <img src="css\Subway.jpg" alt="Our client">
+            </div>
+            <div class="client-item">
+                <img src="css\Mc-donald's.jpg" alt="Our client">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Any query:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.MyMeal.com All rights reserved
+        </div>
+    </footer>
+</body>
+</html>

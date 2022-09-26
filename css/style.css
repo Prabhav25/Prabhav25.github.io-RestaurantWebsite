@@ -1,0 +1,235 @@
+/* CSS reset */
+*{                   
+    margin: 0;
+    padding: 0;
+}
+html{  /*it is for so that if we click on about then we reach to about of the page and if we click on services in navigation bar we should reach at services of the page etc*/
+    scroll-behavior: smooth;  /*if there is any scrolling in html it should be smooth*/
+}
+/* CSS variables ........ we will now use  */
+:root{           /*making global*/
+    --navbar-height: 59px;
+}
+/* using display:flex*/
+/* Navigation bar ------------------------------------- */
+#navbar{
+    top: 0px;
+    display: flex;     /*things come in row*/
+    align-items: center;
+    position: sticky;    /*so that it remains stick at top*/
+}
+#text{
+    color: black;
+    display: inline -block; /*to display in one line and space taken is only its own space no extra space is taken means it remains inline and we can set width and height also*/
+    position: absolute;/*position relative to parent*/
+    left: 45px;
+    top: 69px;
+    font-family: 'Square Peg', cursive;
+}
+#navbar::before{   /*preferable to add background we use before and after pseudo selectors like here adding background of navbar*/ 
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  /*so that our logo and elements come above the background*/
+    opacity: 0;   /*i did its opacity 0 as i don't the line of navbar to see */
+}
+
+/* Navigation bar: logo and image */
+#logo{
+       margin: 10px 10px;
+}
+#logo img{
+    width: 82px;
+    height: 75px;
+}
+
+/* Navigation bar : List styling */
+#navbar ul{
+    display: flex;
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+#navbar ul li a{ /*we did it inside <a> because if we hover we want changes inside elements wriiten inside <a>*/
+    /* display: block; */
+    color: rgb(236, 248, 8);
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* ----------------------------------------------------------- */
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 410px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{ /* to add background we preferably use pseudo selectors*/
+    content: "";
+    background: url("background.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    z-index: -1;  /*so that our logo and elements come above the background*/
+    opacity: 0.9;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Lobster', cursive;
+}
+
+/*-----------------------------------------------------*/
+
+
+/*Food services section*/
+#services{
+    margin: 20px 70px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 5px 30px;
+    margin-bottom: 35px;
+    border-radius: 25px;
+    background-color:rgb(225, 241, 240) ;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Pacifico', cursive;
+}
+/*------------------------------------------------------*/
+
+
+/*Client section-----------------------------------------*/
+#client-section{
+    height: 544px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#client-section::before{
+    content: "";
+    background: url("background1.jpg");
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    z-index: -1;  
+    opacity: 0.95;
+}
+#clients img{
+    width: 200px;
+    height: 200px;
+}
+/*------------------------------------------------------------*/
+
+
+/*Contact Section--------------------------------------------*/
+#contact{
+    position: relative;
+    height: 660px;
+}
+#contact::before{
+    content: "";
+    background: url("contact-us.jpg") no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9x;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+    
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Lobster', cursive;
+
+}
+
+/*--------------------------------------------------------------*/
+
+/*Footer---------------------------------------------------------*/
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/*---------------------------------------------------------------*/
+
+
+/* Utility Classes ..... it will be used throughout*/
+.h-primary{
+    font-size: 3.4rem;
+    padding: 20px 12px;
+    font-family: 'Pacifico', cursive;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Pacifico', cursive;
+}
+.btn{
+    padding: 6px 17px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+
